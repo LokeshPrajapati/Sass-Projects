@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import '../Partial-files/variables';
+@import '../Partial-files/functions';
+@import '../Partial-files/mixins';
+
+body {
+    // font-size: responsive-font-sizes(15, 24, 360, 1920);
+    color: $white;
+    font-size: 14px;
+    font-family: $regular;
+}
+
+.row {
+    @include row();
+}
+
+// container fluid and container
+.container-fluid {
+    width: $w-100;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.container {
+    width: $w-100;
+    max-width: $max-width;
+}
+
+// classes
+
+.w-100 {
+    width: $w-100;
+}
+
+.d-flex {
+    display: $d-flex;
+}
+
+.flex-wrap {
+    flex-wrap: $wrap;
+}
+
+.justify-content-between {
+    justify-content: $space-between;
+}
+
+.align-items-center {
+    align-items: $center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+    li {
+        list-style-type: none;
+    }
+}
+
+@import '../Partial-files/loops';
+
+// header start
+@import '../Partial-files/header';
+// header end

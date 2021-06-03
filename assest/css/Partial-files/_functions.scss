@@ -1,0 +1,8 @@
+@function responsive-font-sizes($min-font-size, $max-font-size, $min-screen-width, $max-screen-width, $unit : "px") {
+    @return calc(#{$min-font-size + $unit} + (#{$max-font-size} - #{$min-font-size}) * (100vw - #{$min-screen-width + $unit}) / (#{($max-screen-width)} - #{($min-screen-width)}));
+}
+
+// @function responsiveFontSize($min, $max, $min-size, $max-size, $unit : "px") {
+//     $font-size: calc(#{$min-size + $unit} + (#{$max-size} - #{$min-size}) * (100vw - #{$min + $unit}) / (#{$max} - #{$min}));
+//     @return $font-size;
+// }
