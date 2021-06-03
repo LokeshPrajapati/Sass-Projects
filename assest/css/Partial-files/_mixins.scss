@@ -1,0 +1,10 @@
+// @import './variables';
+
+@mixin row() {
+    width: $w-100;
+    padding: 10px;
+    display: $d-flex;
+    justify-content: $space-between;
+    align-items: $center;
+    flex-wrap: $wrap;
+}

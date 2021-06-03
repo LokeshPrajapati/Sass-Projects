@@ -1,0 +1,25 @@
+// container width 
+
+$max-width : 1200px;
+$primary-color : #5830e0;
+$secondary-color :#888;
+$dark :#081828;
+$grid-colunm : 12;
+$w-100 : 100%;
+
+// display property
+$d-flex : flex;
+$space-between : space-between;
+$wrap : wrap;
+$center : center;
+
+$bg-colors : (primary : (background-color : $primary-color,
+    ),
+    secondary : (background-color : $secondary-color,
+    ),
+    dark : (background-color : $dark,
+    ),
+);
+
+// padding and margin points
+$points : (8, 16, 24, 32, 40);

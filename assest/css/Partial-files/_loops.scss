@@ -1,0 +1,91 @@
+// @import './variables';
+
+// grid loops
+@for $columns from 1 through $grid-colunm {
+    .col-#{$columns} {
+        width: floor(($columns / $grid-colunm) * 100%);
+        padding: 10px;
+    }
+}
+
+// bg-colors and text-colors loops
+@each $bg-name,
+$bg-color in $bg-colors {
+    $get-bg-color: nth(map-values($bg-color), 1);
+
+    .bg-#{$bg-name} {
+        background-color: $get-bg-color;
+    }
+
+    .text-#{$bg-name} {
+        color: $get-bg-color;
+    }
+}
+
+// padding  and margin loops
+@each $padding in $points {
+    .p-#{$padding} {
+        padding: $padding * 1px;
+    }
+
+    .pt-#{$padding} {
+        padding-top: $padding * 1px;
+    }
+
+    .pb-#{$padding} {
+        padding-bottom: $padding * 1px;
+    }
+
+    .pl-#{$padding} {
+        padding-left: $padding * 1px;
+    }
+
+    .pr-#{$padding} {
+        padding-right: $padding * 1px;
+    }
+
+    .px-#{$padding} {
+        padding-left: $padding * 1px;
+        padding-right: $padding * 1px;
+    }
+
+    .py-#{$padding} {
+        padding-top: $padding * 1px;
+        padding-bottom: $padding * 1px;
+    }
+
+    // margin loop start
+
+    .m-#{$padding} {
+        margin: $padding * 1px;
+    }
+
+    .mt-#{$padding} {
+        margin-top: $padding * 1px;
+    }
+
+    .mb-#{$padding} {
+        margin-bottom: $padding * 1px;
+    }
+
+    .ml-#{$padding} {
+        margin-left: $padding * 1px;
+    }
+
+    .mr-#{$padding} {
+        margin-right: $padding * 1px;
+    }
+
+    .mx-#{$padding} {
+        margin-left: $padding * 1px;
+        margin-right: $padding * 1px;
+    }
+
+    .my-#{$padding} {
+        margin-top: $padding * 1px;
+        margin-bottom: $padding * 1px;
+    }
+
+}
+
+// 
