@@ -11,8 +11,10 @@
 body {
     // font-size: responsive-font-sizes(15, 24, 360, 1920);
     color: $white;
-    font-size: 14px;
+    font-size: responsive-font-sizes(16, 24, 360, 1920);
+    // @include responsive-font-sizes()
     font-family: $regular;
+    // font-family: monospace
 }
 
 .row {
@@ -53,12 +55,23 @@ body {
     align-items: $center;
 }
 
+.d-block {
+    display: block !important;
+}
+
+.transition {
+    right: 0 !important;
+    @include transition(all .5s ease-in-out);
+}
+
 a {
     text-decoration: none;
-    color: #fff;
+    color: white;
 
     &:hover {
         text-decoration: none;
+        color: $text-hover-color;
+        transition: all .3s ease-in-out;
     }
 }
 

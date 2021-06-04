@@ -8,13 +8,16 @@
     <title>WP-Theme</title>
     <link rel="shortcut icon" href="./assest/images/favicon.png" type="images/png">
     <link rel="stylesheet" href="./assest/css/style-file/style.css">
+    <script src="./assest/js/jquery.js"></script>
 </head>
 
 <body>
 
     <?php include './assest/components/reuse-compontents/header.php' ?>
-    <?php include './assest/components/reuse-compontents/footer.php' ?>
+    <!-- <?php include './assest/components/reuse-compontents/footer.php' ?> -->
 
+
+    <script src="./assest/js/index.js"></script>
 </body>
 
 </html>

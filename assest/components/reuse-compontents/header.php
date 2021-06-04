@@ -1,4 +1,4 @@
-<header class="header container-fluid bg-dark">
+<header class="header container-fluid bg-primary">
     <div class="row">
         <nav class="navbar d-flex justify-content-between align-items-center w-100">
             <a href="#" class="navbar-brand mr-16">
